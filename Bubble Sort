@@ -1,0 +1,14 @@
+array=[]
+n=int(input("Enter the Elements:"))
+for i in range(0,n):
+    x=input()
+    array.append(x)
+
+print("This array:",array)
+
+for i in range(1,n-1):
+    for j in range(0,n-i):
+        if array[j]>array[j+1]:
+            array[j],array[j+1]=array[j+1],array[j]
+
+print("after sort:",array)

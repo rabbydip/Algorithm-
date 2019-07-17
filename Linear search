@@ -1,0 +1,18 @@
+array=[]
+n= int(input("Enter Size of array:"))
+for i in range(0,n):
+    x=input()
+    array.append(x)
+print("This array is:",array)
+
+found=False
+print("Searching the item")
+
+item=input()
+for i in range(0,n):
+    if item==array[i]:
+        found = True
+        print(item,"is in",i,"index")
+        break
+if not found:
+    print("Not found")
